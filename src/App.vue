@@ -1,30 +1,48 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <div class="app-container">
+  <the-header />
   <router-view/>
+  <the-footer />
+  </div>
+
+
 </template>
 
+<script>
+  import TheHeader from "@/components/TheHeader";
+  import TheFooter from "@/components/TheFooter";
+
+export default {
+
+  name: 'HomeView',
+  components: { TheHeader, TheFooter
+  }
+}
+</script>
+
 <style lang="scss">
+@import "@/assets/scss/main.scss";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  height: 98vh;
+  background-color: $color-background;
+  color: $color-primary-font;
+
 }
 
-nav {
-  padding: 30px;
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  background-color: $color-background;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
+
 </style>
