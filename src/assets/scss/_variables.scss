@@ -21,16 +21,22 @@ $color-white: #fff;
 $color-black: #000;
 
 $color-background: #73c2aa;
+$color-background-alt: #28b485;
+
 
 $color-primary-font: #F1EEE9;
 $color-secondary-font: #73777B;
 $color-accent-font: #EC994B;
 
 // FONT
-$default-font-size: 1.6rem;
+$font-heading-1: 5.4rem;
+$font-heading-2: 3.6rem;
+$font-heading-3: 2.8rem;
+$font-heading-4: 2rem;
+$font-heading-5: 1.6rem;
 
+// BOX SHADOW
 
-// GRID
-$grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-horizontal: 6rem;
+$box-shadow-large: 0 0.5rem 3rem rgba(0, 0, 0, 0.8);
+$box-shadow-medium: 0 0.5rem 3rem rgba(0, 0, 0, 0.5);
+$box-shadow-small: 0 0.5rem 3rem rgba(0, 0, 0, 0.2);

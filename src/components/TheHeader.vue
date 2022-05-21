@@ -21,7 +21,7 @@ export default {
 @import "@/assets/scss/main.scss";
 
 .header {
-  background-color: $color-background;
+  background-color:transparent;
   font-size: 2rem;
   color: $color-secondary-font;
 

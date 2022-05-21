@@ -30,8 +30,6 @@ export default {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  height: 98vh;
-  background-color: $color-background;
   color: $color-primary-font;
 
 }
@@ -41,7 +39,11 @@ export default {
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
-  background-color: $color-background;
+  background-image: linear-gradient(
+          to right bottom,
+          rgba($color-background, 0.8),
+          rgba($color-background-alt,0.8));
+
 
 }
 
